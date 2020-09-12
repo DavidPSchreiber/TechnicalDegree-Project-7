@@ -1,0 +1,140 @@
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.app-header__user {
+  font-size: 14px;
+}
+
+.header__headline {
+  @include font($size: 1.25em, $weight: $font-weight-semi-bold);
+}
+
+.alert {
+  @include element($color-tertiary, #000, none) {
+    padding: 12px 18px;
+    border-radius: $border-sm;
+  }
+  margin-top: 25px;
+  position: relative;
+  &__title {
+    @include font($size: 14px, $weight: $font-weight-bold);
+  }
+  &__message {
+    font-size: 13px;
+    margin-top: 5px;
+    @include mq('desktop') {
+      display: inline-block;
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+.sub-headline {
+  @include font($size: .9em, $weight: $font-weight-semi-bold) {
+    text-transform: uppercase;
+  }
+  padding-left: 5px;
+}
+
+.traffic__link {
+  @include font($weight: $font-weight-bold);
+  display: inline-block;
+  margin-right: 3px;
+  padding: 6px 12px;
+  @include mq('phone') {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  color: $color-link;
+  cursor: pointer;
+  &--active {
+    @include element(#6b8e23, $white) {
+      border-radius: $border-round;
+    }
+  }
+}
+
+.social {
+  &__media {
+    color: $color-tertiary;
+    @include font($size: 1em, $weight: $font-weight-bold) {
+      text-align: right;
+    }
+    @include mq('tablet-wide') {
+      @include font($size: 1.2em) {
+        text-align: left;
+      }
+    }
+  }
+  &__count {
+    @include font($size: 2em, $weight: $font-weight-light) {
+      text-align: right;
+    }
+    @include mq('tablet-wide') {
+      @include font($size: 2.8em);
+    }
+  }
+}
+
+.activity {
+  &__desc {
+    font-size: 13.5px;
+    overflow: hidden;
+    @include mq('tablet-small') {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 90%;
+    }
+    @include mq('tablet-medium') {
+      width: 100%
+    }
+    @include mq('tablet-wide') {
+      width: 90%;
+    }
+    @include mq('desktop') {
+      width: 100%;
+    }
+    &--name {
+      @include font($weight: $font-weight-semi-bold);
+    }
+  }
+  &__email {
+    color: $color-primary;
+    @include font();
+  }
+  &__join-date {
+    @include font() {
+      text-align: right;
+    }
+    margin-top: 5px;
+    flex: 0 100%;
+    @include mq('phone') {
+      margin-top: 0;
+      flex-basis: auto;
+    }
+  }
+  &__post {
+    @include font($family: $font-secondary, $weight: $font-weight-semi-bold);
+  }
+  &__date {
+    @include font($family: $font-secondary, $weight: $font-weight-semi-bold);
+  }
+}
+
+.autocomplete-items {
+  font-size: 14px;
+  div:hover {
+    color: $white;
+    strong {
+      color: $white;
+    }
+  }
+  strong {
+    color: $color-primary;
+  }
+}
+
+.toggle-label {
+  @include font($size: 13.5px, $weight: $font-weight-semi-bold);
+}

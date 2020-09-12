@@ -1,0 +1,69 @@
+.app-header__icon {
+  cursor: pointer;
+  width: 21px;
+  transition: transform .5s;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  &:hover {
+    transform: rotate(30deg);
+  }
+}
+
+.notification-light {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  @include element($width: 7px, $height: 7px, $background: $color-notification, $color: $color-notification) {
+    border-radius: $border-round;
+    visibility: hidden;
+  }
+}
+
+.app-nav {
+  &__icon {
+    width: 35px;
+    height: 35px;
+    opacity: .5;
+    transition: opacity .3s;
+  }
+  &__icon:hover,
+  &__link--selected &__icon {
+    opacity: 1;
+  }
+}
+
+.close-icon {
+  width: 10px;
+  cursor: pointer;
+  margin-top: 1px;
+  margin-left: auto;
+}
+
+.alert__icon {
+  width: 10px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  @include mq('desktop') {
+    top: 14px;
+    right: 14px;
+  }
+}
+
+#Layer_1 {
+  border: 10px solid $color-primary;
+  border-radius: $border-round;
+  background: $color-primary;
+  width: 70px;
+  height: 70px;
+  path {
+    fill: $white;
+  }
+}
+
+.activity__toggle {
+  cursor: pointer;
+  width: 15px;
+}

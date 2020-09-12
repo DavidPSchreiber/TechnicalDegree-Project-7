@@ -1,0 +1,48 @@
+// Colors
+$white               : #fff;
+$black               : #000;
+
+// Defined Colors
+$grey                : #818181;
+$silver              : #FBFBFB;
+
+$color-primary       : #6b8e23;
+$color-secondary     : #4D4C72;
+$color-tertiary      : #000000;
+
+$color-text              : #727171;
+$color-link              : #939393;
+$color-link-selected     : #6B8E23;
+$color-nav-link-selected : #07477B;
+$color-notification      : #07477B;
+
+$color-border         : lighten($grey, 35%);
+
+$color-button-primary : #7477bf;
+$color-button-neutral : #7477bf;
+
+// Font 
+$font-primary            : 'Open Sans', sans-serif;
+$font-secondary          : 'Muli', sans-serif;
+$font-size               : 16px;
+$font-weight-light       : 300;
+$font-weight-regular     : 400;
+$font-weight-semi-bold   : 600;
+$font-weight-bold        : 700;
+
+// Borders
+$border-sm              : 5px;
+$border-round           : 100px;
+
+// Layout
+$breakpoints: (
+  'phone'         : 480px,
+  'tablet-small'  : 680px,
+  'tablet'        : 768px,
+  'tablet-medium' : 992px,
+  'tablet-wide'   : 1024px,
+  'desktop'       : 1150px
+);
+
+
+

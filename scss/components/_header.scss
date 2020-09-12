@@ -1,0 +1,80 @@
+.app-header {
+  text-align: center;
+  @include element($color-primary, $white);
+  @include flex($wrap: wrap) {
+    justify-content: center;
+  }
+  padding: 1em 1.5em;
+  @include mq('tablet-small') {
+    flex-wrap: nowrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 70px;
+  }
+  &__name {
+    flex: 0 100%;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 0;
+    @include mq('tablet-small') {
+      flex-basis: auto;
+      margin: 0 auto 0 0;
+    }
+  }
+  &__icon-container {
+    border-right: 1.5px solid #6366BF;
+    padding: 10px 24px 10px 0;
+    margin-right: 15px;
+    @include flex();
+    position: relative;
+  }
+}
+
+.notifications {
+  @include element($disp: none, $width: 315px, $background: $silver, $color: $color-text) {
+    font-size: 13px;
+    @include border();
+    border-radius: $border-sm;
+  }
+  position: absolute;
+  top: 55px;
+  right: -210px;
+  z-index: 1;
+  @include mq('phone') {
+    width: 350px;
+    // right: 136px;
+  }
+  @include mq('tablet-small') {
+    right: -120px;
+  }
+  @include mq('tablet') {
+    // right: 0;
+  }
+  .notification {
+    @include flex();
+    padding: 5px 10px 5px 6px;
+    @include border('bottom');
+    height: 42px;
+    &:nth-child(odd) {
+      background: lighten($color-border, 6%);
+    }
+    span {
+      margin-left: 5px;
+    }
+    img + span {
+      margin-left: 0;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 80%;
+      min-height: 15px;
+      @include mq('phone') {
+        width: 100%;
+      }
+    }
+    img + span + span {
+      margin-left: auto;
+    }
+  }
+}

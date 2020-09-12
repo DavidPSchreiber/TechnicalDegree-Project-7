@@ -1,0 +1,31 @@
+.btn {
+  &-positive {
+    @extend %btn;
+  }
+  &-neutral {
+    @extend %btn;
+    background: $color-button-neutral;
+  }
+}
+
+.btn-neutral {
+  margin: 17px 0;
+}
+
+.settings .btn-positive {
+  @include mq('tablet-wide') {
+    margin-right: 25px;
+  }
+}
+
+.settings .btn-neutral {
+  margin-bottom: 0;
+}
+
+.settings .btn-positive,
+.settings .btn-neutral {
+  @include mq('tablet-wide') {
+    margin-top: 5px;
+    @include element($disp: inline-block, $width: calc(50% - 15px));
+  }
+}
