@@ -240,16 +240,3 @@ let users = [
   }
 ];
 
-// Plugins
-//ion.sound({
-//    sounds: [
-//        {
-//          name: 'level_up',
-//          volume: 0.2
-//        }
-//    ],
-//    volume: 0,
-//    // volume: 0.2,
-//    path: "js/plugins/ion-sound/sounds/",
-//    preload: true
-//});

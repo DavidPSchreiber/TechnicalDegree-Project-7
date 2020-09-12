@@ -1,4 +1,4 @@
-// Get User settings and display them
+// Get User settings and display
 addUserSettings();
 
 // Add default notifications to DOM
@@ -69,9 +69,9 @@ nav.addEventListener('click', e => {
 });
 
 alertMessage.addEventListener('click', e => {
-  // Check if the X icon was clicked on
+  // Check if the x-icon was clicked on
   if (e.target.className === 'alert__icon') {
-    // Slide up and hide the alert message
+    // Slide up to hide the alert message
     $(alertMessage).slideUp(700);
   }
 });
@@ -113,7 +113,7 @@ messageForm.addEventListener('click', e => {
   }
 });
 
-// Add the autocomplete function for the user field in the message area
+// Add the auto-complete function for the user field in the message area
 autocomplete(userField, users);
 
 saveSettingsBtn.addEventListener('click', () => {
