@@ -634,13 +634,13 @@ img {
   }
 }
 .app-nav__link--selected::before {
-  border-bottom-color: #85DB80;
+  border-bottom-color: #07477B;
   opacity: 1;
 }
 @media (min-width: 768px) {
   .app-nav__link--selected::before {
     border-radius: 100px;
-    border-right-color: #85DB80;
+    border-right-color: #07477B;
   }
 }
 

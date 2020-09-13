@@ -51,10 +51,10 @@
       }
     }
     &--selected::before {
-      border-bottom-color: #07477B;
+      border-bottom-color: #5247b3;
       @include mq('tablet') {
         border-radius: $border-round;
-        border-right-color: #07477B;
+        border-right-color: #5247b3;
 //        border-right-color: $color-nav-link-selected;
       }
       opacity: 1;
