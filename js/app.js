@@ -8,7 +8,7 @@ addNotifications();
 window.addEventListener('load', showNotificationAlert());
 
 // display default login alert box
-showAlert('Alert', 'Chart data is from Saturday due to a system update that ran overnight.');
+showAlert('Alert', 'Due to rolling blackouts, chart data might be delayed.');
 $('#alertMessage').delay(300).slideDown(700);
 
 // Event Listeners
