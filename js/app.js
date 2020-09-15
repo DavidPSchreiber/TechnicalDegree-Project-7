@@ -133,5 +133,3 @@ cancelSettingsBtn.addEventListener("click", () => {
   
 });
 
-
-//<button class="btn-neutral" id="cancel">Cancel</button>

@@ -205,6 +205,9 @@ const addUserSettings = () => {
   if (timezonePreference === 'Pacific') {
     timezoneSelect.selectedIndex = '3';
   }
+  if (timezonePreference === 'Greenwich Mean Time'){
+      timezoneSelect.selectIndex = '4';
+  }
 }
 
 const addNotifications = () => {
