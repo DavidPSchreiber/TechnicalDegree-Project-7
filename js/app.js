@@ -129,5 +129,9 @@ cancelSettingsBtn.addEventListener("click", () => {
   if (profileSettingsCheckBox.checked) {
     profileSettingsCheckBox.checked = false;
   }
+    document.getElementById("time-zone").selectedIndex = 0;
+  
 });
 
+
+//<button class="btn-neutral" id="cancel">Cancel</button>
